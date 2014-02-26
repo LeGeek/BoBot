@@ -4,6 +4,8 @@
 .classpath
 .project
 .settings
+.idea
+*.iml
 
 # Package Files #
 *.jar
@@ -11,3 +13,4 @@
 *.ear
 
 *.swp
+
