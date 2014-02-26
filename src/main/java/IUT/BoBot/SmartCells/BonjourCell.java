@@ -1,5 +1,8 @@
 package IUT.BoBot.SmartCells;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import IUT.BoBot.SmartCell;
 
 /**
@@ -8,11 +11,13 @@ import IUT.BoBot.SmartCell;
  */
 public class BonjourCell implements SmartCell {
 	
+	public static final ArrayList<String> greetings = new ArrayList<String>(Arrays.asList("Bonjour", "Yo", "Salut"));
+	
 	public String ask(String question) {
-		if(question.contains("Bonjour"))
-		  return "Bonjour!";
-		else
-		  return null;
+		for(final String greeting: greetings) {
+			if(question.startsWith(greeting)) return "Bonjour!";
+		}
+		return null;
 	}
 
 }
