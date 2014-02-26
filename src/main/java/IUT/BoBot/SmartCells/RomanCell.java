@@ -27,6 +27,7 @@ public class RomanCell implements SmartCell{
 	}
 	
 	private int toArab(String roman) {
+		roman = roman.toUpperCase();
 		int arab = 0;
 		
 		for(int c = 0; c < roman.length(); ++c) {	

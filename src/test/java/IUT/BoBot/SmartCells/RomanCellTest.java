@@ -30,4 +30,8 @@ public class RomanCellTest {
 		assertEquals(Integer.toString(15), cell.ask("VX en nombres arabes"));
 	}
 
+	@Test
+	public void testvX() {
+		assertEquals(Integer.toString(15), cell.ask("vX en nombres arabes"));
+	}
 }
