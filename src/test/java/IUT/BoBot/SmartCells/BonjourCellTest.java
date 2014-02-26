@@ -14,6 +14,11 @@ public class BonjourCellTest {
 	}
 	
 	@Test
+	public void testYo() {
+		assertEquals("Bonjour!", cell.ask("Yo!"));
+	}
+	
+	@Test
 	public void testNotBonjour() {
 		assertEquals(null, cell.ask("au revoir"));
 	}

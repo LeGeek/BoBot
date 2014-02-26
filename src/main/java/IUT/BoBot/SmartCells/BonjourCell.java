@@ -9,7 +9,7 @@ import IUT.BoBot.SmartCell;
 public class BonjourCell implements SmartCell {
 	
 	public String ask(String question) {
-		if(question.contains("Bonjour"))
+		if(question.contains("Bonjour") || question.startsWith("Yo"))
 		  return "Bonjour!";
 		else
 		  return null;
