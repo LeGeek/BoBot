@@ -4,6 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Integration tests checking the Bot
  * behavior. We just test some cases to make sure that the
@@ -30,5 +33,13 @@ public class BotTest {
     @Test
     public void testAuRevoir(){
         assertEquals("au revoir", bot.ask("au revoir"));
+    }
+
+    @Test
+    public void testDate(){
+        Date today = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEEE dd MMMMM yyyy");
+
+        assertEquals(simpleDateFormat.format(today), bot.ask("Quel date sommes-nous ?"));
     }
 }
