@@ -10,8 +10,9 @@ public class RomanCellTest {
 
 	@Test
 	public void testSingleNumbers() {
-		for(final Character numeral: RomanCell.numerals.keySet())
-			assertEquals(RomanCell.numerals.get(numeral), cell.ask(numeral + " en nombre arabe"));
+		for(final Character numeral: RomanCell.numerals.keySet()) {
+			assertEquals(Integer.toString(RomanCell.numerals.get(numeral)), cell.ask(numeral + " en nombres arabes"));
+		}
 	}
 
 }

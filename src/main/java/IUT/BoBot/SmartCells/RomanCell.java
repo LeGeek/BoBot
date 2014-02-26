@@ -27,7 +27,13 @@ public class RomanCell implements SmartCell{
 	}
 	
 	private int toArab(String roman) {
-		return null;
+		int arab = 0;
+		
+		for(int c = 0; c < roman.length(); ++c) {
+			arab += numerals.get(roman.charAt(c));
+		}
+		
+		return arab;
 	}
 
 }
