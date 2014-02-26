@@ -1,13 +1,12 @@
 package IUT.BoBot.SmartCells;
 
 
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.logging.SimpleFormatter;
 
-import static org.junit.Assert.*;
+import org.junit.Test;
 
 /**
  * Created by legeek on 26/02/14.
