@@ -19,6 +19,14 @@ public class RomanCell implements SmartCell{
 	
 	@Override
 	public String ask(String question) {
+		String number = question.substring(0, question.indexOf(" "));
+		if(question.contains("en nombres arabes"))
+			return Integer.toString(toArab(number));
+		
+		return null;
+	}
+	
+	private int toArab(String roman) {
 		return null;
 	}
 
