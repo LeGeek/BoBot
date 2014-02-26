@@ -16,6 +16,6 @@ public class AuRevoirCellTest {
 
     @Test
     public void testNull(){
-        assertEquals(null, auRevoirCell.ask(null));
+        assertEquals(null, auRevoirCell.ask(""));
     }
 }
